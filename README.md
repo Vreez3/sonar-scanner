@@ -14,7 +14,18 @@ Hardware (what I used)
 - Hobby servo (e.g., SG90)
 - Common-cathode RGB LED
 - Passive buzzer
+- Jumper Wires
+- Breadboard
 
+**Features:**  
+- Servo sweeps 0° → 180° → 0° continuously  
+- RGB LED indicates distance:  
+  - **Blue/Green:** Safe  
+  - **Yellow (Red + Green):** Medium  
+  - **Red:** Close  
+- Buzzer alerts for medium and close distances
+
+  
 Wiring (matches the sketch)
 - Servo signal -> D3
 - HC‑SR04 TRIG -> D10
@@ -28,17 +39,12 @@ Wiring (matches the sketch)
 Important notes
 - The sketch preserves the original conversion used in the provided code: distance = duration * 0.0175, which yields distance in centimeters.
 - If the servo causes the Arduino to reset or behave erratically, use a separate 5V supply for the servo and connect grounds.
+Videos
+[![Demo Video 1](https://img.youtube.com/vi/5Y3a9QMXJlM/0.jpg)](https://youtu.be/5Y3a9QMXJlM)
+[![Demo Video 2](https://img.youtube.com/vi/cpp6jHr58mc/0.jpg)](https://youtu.be/cpp6jHr58mc)
 
-Quick start
-1. Open src/sonar_scanner.ino in the Arduino IDE.
-2. Select Arduino UNO, set the correct COM port, and upload.
-3. Power the circuit and observe the LED and buzzer behavior as the sensor sweeps.
 
-Files
-- src/sonar_scanner.ino — Arduino sketch (original logic preserved with added comments)
-- scripts/plot_serial.py — optional live plotter (not required by the sketch as-is)
-- CONTRIBUTING.md — contribution guidelines
-- LICENSE — MIT license
+
 
 License
 MIT (see LICENSE file)
