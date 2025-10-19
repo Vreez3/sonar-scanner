@@ -1,0 +1,22 @@
+# Arduino build files
+*.hex
+*.elf
+*.bin
+*.eep
+*.map
+*.d
+*.out
+*.o
+
+# Temporary Arduino IDE files
+*.ino.cpp
+*.ino.d
+*.ino.elf
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VSCode or PlatformIO cache
+.vscode/
+.pio/
